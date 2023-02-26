@@ -40,7 +40,7 @@ def saveJSONObjects(soup):
         if not posting:
             continue
         
-        key = posting['company'] + " " +posting['role']
+        key = posting['company'] + " " + posting['role']
         if not key in d:
             store['postings'].append(posting)
 

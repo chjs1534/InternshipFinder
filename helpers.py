@@ -9,7 +9,7 @@ def getCurrentStore():
             store = json.load(f)
         
         for obj in store['postings']:
-            d.update({obj['company'] + obj['role']: 1})
+            d.update({obj['company'] + " " + obj['role']: 1})
     else:
         store = {'postings': []}
     
